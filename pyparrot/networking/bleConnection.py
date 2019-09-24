@@ -189,7 +189,7 @@ class BLEConnection:
         while (try_num < num_retries and not success):
             try:
                 color_print("trying to re-connect to the minidrone at address %s" % self.address, "WARN")
-                self.drone_connection.connect(self.address, "random")
+                self.drone_connection.connect(self.address, "public")
                 color_print("connected!  Asking for services and characteristics", "SUCCESS")
                 success = True
             except BTLEException:
@@ -210,7 +210,7 @@ class BLEConnection:
         :return: throws an error if the drone connection failed.  Returns void if nothing failed.
         """
         color_print("trying to connect to the minidrone at address %s" % self.address, "INFO")
-        self.drone_connection.connect(self.address, "random")
+        self.drone_connection.connect(self.address, "public")
         color_print("connected!  Asking for services and characteristics", "SUCCESS")
 
         # re-try until all services have been found
