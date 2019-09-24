@@ -1,4 +1,4 @@
-# pyparrot
+# pyparrot **Modified to work with rolling spyder minidrones**
 Python interface for Parrot Drones
 
 pyparrot was designed and implemented by Dr. Amy McGovern to program Parrot Mambo and Parrot Bebop 2
