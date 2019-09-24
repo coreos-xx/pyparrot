@@ -5,7 +5,8 @@ Author: Amy McGovern
 """
 
 from pyparrot.Minidrone import Mambo
-
+from pyparrot.networking.bleConnection import BLEConnection
+BLEAvailable = True 
 # you will need to change this to the address of YOUR mambo
 mamboAddr = "e0:14:d0:63:3d:d0"
 
